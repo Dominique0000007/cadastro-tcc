@@ -1,41 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Cadastro SENAI</title>
-    <link rel="stylesheet" href="./css/cadastro.css">
-    <link rel="stylesheet" href="./css/media.css">
-    <link rel="stylesheet" href="./css/global.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro SENAI</title>
+  <link rel="stylesheet" href="./css/cadastro.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">SENAI</div>
-        <nav>
-            <ul>
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Processo Seletivo</a></li>
-                <li><a href="#">Fale Conosco</a></li>
-            </ul>
-        </nav>
-        <div class="icons">
-            <span class="icon">🔍</span>
-            <span class="icon">👤 Alunos</span>
-        </div>
-    </header>
+  <header>
+    <div class="navbar">
+      <img src="./img/logo/senai.png" alt="SENAI" class="logo">
+      <nav>
+        <a href="#">Cursos</a>
+        <a href="#">Processo Seletivo</a>
+        <a href="#">Fale Conosco</a>
+      </nav>
+      <div class="icons">
+        <a href="#" class="icon-search"></a>
+        <a href="#" class="icon-user">Alunos</a>
+      </div>
     </div>
-    <div class="container">
-        <h1>Cadastre-se</h1>
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" placeholder="Digite seu nome">
-            <br><br>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" placeholder="Digite seu e-mail">
-            <br><br>
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" placeholder="Digite sua senha">
-            <br><br>
-            <button type="submit">Cadastrar</button>
+  </header>
+  <main>
+    <div class="background">
+      <div class="form-container">
+        <h2>Cadastre-se</h2>
+        <form action="#">
+          <div class="input-group">
+            <input type="text" placeholder="Nome">
+            <span class="icon">👤</span>
+          </div>
+          <div class="input-group">
+            <input type="email" placeholder="E-mail">
+            <span class="icon">📧</span>
+          </div>
+          <div class="input-group">
+            <input type="password" placeholder="Senha">
+            <span class="icon">🔒</span>
+          </div>
+          <a href="#" class="forgot-password">Esqueceu Senha?</a>
+          <button type="submit" class="btn-login">Login</button>
+          <p>OU</p>
+          <div class="social-login">
+            <button class="btn-facebook">Facebook</button>
+            <button class="btn-google">Google</button>
+          </div>
         </form>
+      </div>
     </div>
+  </main>
 </body>
 </html>
